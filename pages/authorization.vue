@@ -1,9 +1,9 @@
 <template>
-  <Tutorial />
+  <MainPage />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'AutorizationPage',
 }
 </script>
