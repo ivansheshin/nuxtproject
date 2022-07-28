@@ -1,11 +1,11 @@
 <template>
-  <div>
-      ПОШОЛ ВОН ОТСЮДОВА
-  </div>
+  <AccountTemplate/>
 </template>
 
 <script>
+
 export default {
   name: 'AccountPage',
+  middleware: 'auth',
 }
 </script>
