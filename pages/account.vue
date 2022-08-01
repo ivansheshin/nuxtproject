@@ -6,6 +6,9 @@
 
 export default {
   name: 'AccountPage',
-  middleware: 'auth',
+    beforeRouteEnter(to, from, next) {
+    const q = 1;
+    if (!q) next();
+  },
 }
 </script>
