@@ -7,5 +7,5 @@ export default () => ({
     name: '',
     password: '',
   },
-  authEd: false,
+  auth: false,
 })

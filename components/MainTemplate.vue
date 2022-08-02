@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'MainTemplate',
@@ -42,7 +42,9 @@ export default {
     saveToStorage() {
       localStorage.setItem('name', this.$refs.name.value);
       localStorage.setItem('password', this.$refs.password.value);
-    }
+      this.getInfoFromStorage();
+    },
+    ...mapActions(['getInfoFromStorage']),
   },
 }
 </script>
